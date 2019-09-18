@@ -1,0 +1,6 @@
+**** RESULTS FOR 6TH ATTEMPT ****
+This includes parallel outermost loop with static,4 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.873598, Parallel time = 0.156982, Speedup = 5.564949
+Sequential time = 2.582730, Parallel time = 0.480033, Speedup = 5.380315

@@ -1,0 +1,6 @@
+**** RESULTS FOR 9TH ATTEMPT ****
+This includes parallel outer loop with dynamic,2 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.770086, Parallel time = 0.071109, Speedup = 10.829684
+Sequential time = 2.195568, Parallel time = 0.467660, Speedup = 4.694796

@@ -1,0 +1,6 @@
+**** RESULTS FOR 12TH ATTEMPT ****
+This is outer loop parallel with dynamic,16 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.764425, Parallel time = 0.070836, Speedup = 10.791499
+Sequential time = 2.219537, Parallel time = 0.201883, Speedup = 10.994171

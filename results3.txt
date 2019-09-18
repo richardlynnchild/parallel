@@ -1,0 +1,6 @@
+**** RESULTS FOR 3RD ATTEMPT ****
+Using collapse(2) on the outer 2 loops
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.757496, Parallel time = 0.117673, Speedup = 6.437300
+Sequential time = 2.190656, Parallel time = 0.353444, Speedup = 6.198032

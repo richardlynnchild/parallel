@@ -72,13 +72,26 @@ int main(int argc, char *argv[]) {
 	        for (s =0; s< S; s ++) {// filter width
 	        output_seq[n][k][p][q] += input [n][c][ij+r][ii+s] * weight[k][c][r][s];
 	    } } } } } } }
-  double seq_end = omp_get_wtime();
-  double seq_time = seq_end - seq_start;
+    double seq_end = omp_get_wtime();
+    double seq_time = seq_end - seq_start;
 
 
-    // TODO: ADD PARALLEL CALCULATION, AND TIMING
-    double par_time;
-
+    double par_start = omp_get_wtime();    
+    #pragma omp parallel for collapse(2) schedule(dynamic,16) private(n,k,c,p,ij,ii,q,r,s)
+    for (n=0; n<N; n++) { // minibatch size
+      for (k=0; k<K; k ++) { // output feature map
+        for (c=0; c<C; c ++) { // input feature map
+          for (p=0; p<P; p ++) { // output height
+            ij = p * u; // input height
+            for (q =0; q<Q; q ++) { // output width
+              ii = q * v; // input width
+	      for (r=0; r<R; r ++) { // filter height
+	        for (s =0; s< S; s ++) {// filter width
+	        output_par[n][k][p][q] += input [n][c][ij+r][ii+s] * weight[k][c][r][s];
+	    } } } } } } }
+    
+    double par_end = omp_get_wtime();
+    double par_time = par_end - par_start;
 
     // VERIFY CORRECTNESS BY COMPARING OUTPUTS
     for (n=0; n<N; n++) { // minibatch size

@@ -1,0 +1,7 @@
+**** RESULTS FOR ATTEMPT 1 ****
+Speedup for a single #pragma omp parallel for private(...) on outermost loop
+
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.772441, Parallel time = 0.149917, Speedup = 5.152463
+Sequential time = 2.270360, Parallel time = 0.332399, Speedup = 6.830227

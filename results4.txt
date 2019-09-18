@@ -1,0 +1,7 @@
+**** RESULTS FOR 4TH ATTEMPT ****
+This included parallel on outside loop with collapse(2)
+and another parallel on 'p' loop
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.761050, Parallel time = 0.138874, Speedup = 5.480155
+Sequential time = 2.133615, Parallel time = 1.195424, Speedup = 1.784819

@@ -1,0 +1,74 @@
+**** RESULTS FOR ATTEMPT 1 ****
+Speedup for a single #pragma omp parallel for private(...) on outermost loop
+
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.772441, Parallel time = 0.149917, Speedup = 5.152463
+Sequential time = 2.270360, Parallel time = 0.332399, Speedup = 6.830227
+*** RESULTS FOR 2ND ATTEMPT ***
+Parallelize code for two outermost loops
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.773617, Parallel time = 0.139289, Speedup = 5.554046
+Sequential time = 2.223614, Parallel time = 0.319700, Speedup = 6.955314
+**** RESULTS FOR 3RD ATTEMPT ****
+Using collapse(2) on the outer 2 loops
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.757496, Parallel time = 0.117673, Speedup = 6.437300
+Sequential time = 2.190656, Parallel time = 0.353444, Speedup = 6.198032
+**** RESULTS FOR 4TH ATTEMPT ****
+This included parallel on outside loop with collapse(2)
+and another parallel on 'p' loop
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.761050, Parallel time = 0.138874, Speedup = 5.480155
+Sequential time = 2.133615, Parallel time = 1.195424, Speedup = 1.784819
+**** RESULTS FOR 5TH ATTEMPT ****
+This includes 4 total parallel loops, n,k,p,q
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.711448, Parallel time = 0.155806, Speedup = 4.566240
+Sequential time = 2.253910, Parallel time = 1.487554, Speedup = 1.515179
+**** RESULTS FOR 6TH ATTEMPT ****
+This includes parallel outermost loop with static,4 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.873598, Parallel time = 0.156982, Speedup = 5.564949
+Sequential time = 2.582730, Parallel time = 0.480033, Speedup = 5.380315
+**** RESULTS FOR 7TH ATTEMPT ****
+This includes parallel outer loop with static,8 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.922836, Parallel time = 0.142004, Speedup = 6.498662
+Sequential time = 2.714663, Parallel time = 0.396676, Speedup = 6.843526
+**** RESULTS FOR 8TH ATTEMPT ****
+This includes parallel outer loop with static,32 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.873052, Parallel time = 0.147476, Speedup = 5.919961
+Sequential time = 2.664189, Parallel time = 0.334183, Speedup = 7.972246
+**** RESULTS FOR 9TH ATTEMPT ****
+This includes parallel outer loop with dynamic,2 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.770086, Parallel time = 0.071109, Speedup = 10.829684
+Sequential time = 2.195568, Parallel time = 0.467660, Speedup = 4.694796
+**** RESULTS FOR 10TH ATTEMPT ****
+This includes parallel outer loop with dynamic,4 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.770712, Parallel time = 0.097705, Speedup = 7.888142
+Sequential time = 2.256523, Parallel time = 0.495757, Speedup = 4.551670
+**** RESULTS FOR 11TH ATTEMPT ****
+This has parallelized outer loop with dynamic,8 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.801077, Parallel time = 0.073691, Speedup = 10.870772
+Sequential time = 2.333736, Parallel time = 0.262335, Speedup = 8.896013
+**** RESULTS FOR 12TH ATTEMPT ****
+This is outer loop parallel with dynamic,16 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.764425, Parallel time = 0.070836, Speedup = 10.791499
+Sequential time = 2.219537, Parallel time = 0.201883, Speedup = 10.994171

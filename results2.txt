@@ -1,0 +1,6 @@
+*** RESULTS FOR 2ND ATTEMPT ***
+Parallelize code for two outermost loops
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.773617, Parallel time = 0.139289, Speedup = 5.554046
+Sequential time = 2.223614, Parallel time = 0.319700, Speedup = 6.955314

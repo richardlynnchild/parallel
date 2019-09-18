@@ -1,0 +1,6 @@
+**** RESULTS FOR 8TH ATTEMPT ****
+This includes parallel outer loop with static,32 schedule
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.873052, Parallel time = 0.147476, Speedup = 5.919961
+Sequential time = 2.664189, Parallel time = 0.334183, Speedup = 7.972246

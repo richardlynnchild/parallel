@@ -1,0 +1,6 @@
+**** RESULTS FOR 5TH ATTEMPT ****
+This includes 4 total parallel loops, n,k,p,q
+
+stack size              (kbytes, -s) unlimited
+Sequential time = 0.711448, Parallel time = 0.155806, Speedup = 4.566240
+Sequential time = 2.253910, Parallel time = 1.487554, Speedup = 1.515179
